@@ -33,7 +33,7 @@ export const App = () => {
   };
 
   const handleDownload = async (imageNumber) => {
-    await fetch(`http://via.placeholder.com/3900x3900?text=${imageNumber}`, {
+    await fetch(`https://via.placeholder.com/3900x3900?text=${imageNumber}`, {
       mode: "no-cors",
       headers: { "Access-Control-Allow-Origin": "*" },
     }).then(async (response) => {
@@ -99,7 +99,7 @@ export const App = () => {
                     Close
                   </button>
                   <img
-                    src={`http://via.placeholder.com/2000x2000?text=${modalImageNumber}`}
+                    src={`https://via.placeholder.com/2000x2000?text=${modalImageNumber}`}
                     alt={modalImageNumber}
                   />
                 </Modal>
