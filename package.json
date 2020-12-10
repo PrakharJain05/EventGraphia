@@ -3,13 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "gh-pages": "^3.1.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-infinite-scroll-component": "^5.1.0",
     "react-modal": "^3.12.1",
     "react-scripts": "4.0.1"
   },
+  "homepage": "https://PrakharJain05.github.io/EventGraphia",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
